@@ -7,5 +7,5 @@ set_target_properties(
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/_/bin
 )
 
-target_link_libraries(sdb PRIVATE libsdb)
+target_link_libraries(sdb PRIVATE libsdb PkgConfig::readline)
 
